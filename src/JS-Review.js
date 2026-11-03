@@ -1,5 +1,94 @@
 // React-related JavaScript Refresher section
 
+//Variables: const & let
+
+const courseName = 'JavaScript';
+console.log(courseName); // JavaScript
+
+// courseName = 'React'; // Error: a const variable cannot be reassigned
+
+let lessonCount = 3;
+console.log(lessonCount); // 3
+
+lessonCount = lessonCount + 1;
+console.log(lessonCount); // 4
+
+//************************************************ */
+
+//Data Types
+
+//Numbers: integer & float
+//In JavaScript, both integers and decimals have the type 'number'.
+
+const studentCount = 20;
+const lessonDuration = 1.5;
+
+console.log(typeof studentCount); // number
+console.log(typeof lessonDuration); // number
+
+console.log(Number.isInteger(studentCount)); // true
+console.log(Number.isInteger(lessonDuration)); // false
+
+//String
+
+const lessonName = 'JavaScript Basics';
+
+console.log(typeof lessonName); // string
+console.log(lessonName.length); // 17
+
+//Object
+
+const lesson = {
+    title: 'Variables',
+    duration: 15,
+};
+
+console.log(lesson.title); // Variables
+console.log(lesson.duration); // 15
+
+//Array
+
+const topics = ['Variables', 'Data Types', 'Functions'];
+
+console.log(topics[0]); // Variables (indexes start at 0)
+console.log(topics.length); // 3
+console.log(Array.isArray(topics)); // true
+
+//************************************************ */
+
+//Functions
+
+//Function Declaration
+//A function declaration can be called before its definition.
+
+console.log(addNumbers(5, 3)); // 8
+
+function addNumbers(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
+}
+
+//Function Expression
+//Store a function in a variable, then call it after the assignment.
+
+const subtractNumbers = function (firstNumber, secondNumber) {
+    return firstNumber - secondNumber;
+};
+
+console.log(subtractNumbers(5, 3)); // 2
+
+//Method Shorthand
+//Define a function directly inside an object and call it through the object.
+
+const calculator = {
+    multiply(firstNumber, secondNumber) {
+        return firstNumber * secondNumber;
+    },
+};
+
+console.log(calculator.multiply(5, 3)); // 15
+
+//************************************************ */
+
 //Arrow functions
 
 
